@@ -1,0 +1,36 @@
+{
+  "name": "finance",
+  "version": "1.0.0",
+  "description": "Financial Data Visualization Analysis Service",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "prebuild": "ts-node scripts/parse-corp-xml.ts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "autoprefixer": "^10.4.17",
+    "next": "^15.1.6",
+    "postcss": "^8.4.32",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.10.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.37",
+    "@types/xml2js": "^0.4.14",
+    "ts-node": "^10.9.1"
+  }
+}
